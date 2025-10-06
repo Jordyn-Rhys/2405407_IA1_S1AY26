@@ -67,3 +67,20 @@ body{
     overflow: hidden;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03);
 }
+
+.intro-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.5rem 0; 
+    font-family: 'Suse mono', monospace;
+    color: #0E0218;
+}
+
+.intro-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-round;
+    align-items: center;
+    padding: 1rem; 
+    gap: 2rem; 
+}
