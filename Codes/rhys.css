@@ -1,10 +1,15 @@
-
+body{
+    background-color: #E4C4F2;
+    
+}
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     flex-wrap: nowrap; 
+    background-color: #0E0218;
+    border-radius: 20px;
 }
 .header-logo-block{
     width: 15vw;
@@ -20,6 +25,9 @@
     margin: 0;
     font-size: clamp(1.rem, 1.5vw, 1.5rem);
     white-space: nowrap;
+    color: white; 
+    height: 100%;
+    font-family: 'Suse mono', monospace;
 }
 .header-logo-block h2 img{
     height: 4.5rem;
@@ -31,4 +39,31 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: flex-end;
+}
+.nav-buttons{
+    background-color: #8A13EC;
+    color: white;  
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+.nav-buttons:hover{
+    background-color: #E4C4F2;
+    color:#0E0218 ;
+    transform: scale(1.08);
+}
+.brief-intro-container{
+    width: 90vw; 
+    max-width: 900px;
+    margin: 2rem auto;
+}
+.brief-intro-block{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0E0218;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03);
 }
