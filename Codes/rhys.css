@@ -58,7 +58,7 @@ body{
     width: 80vw; 
     max-width: 700px;
     margin: 2rem auto;
-    background-color: #C15CD1;
+    background-color: #915699;
     padding: 1rem;
     border-radius: 20px;
 }
@@ -135,7 +135,7 @@ body{
     width: 80vw;
     max-width: 1200px;
     margin: 2rem auto;
-    background-color: #C15CD1;
+    background-color: #915699;
     padding: 1rem;
     border-radius: 20px;
 }
@@ -147,6 +147,7 @@ body{
     overflow: hidden;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03);
     background-color: #0E0218;
+    padding: 1rem;
 }
 .About-me-heading{
     font-size: 2rem; 
@@ -219,8 +220,188 @@ body{
     padding: 0.4rem 0.8rem;
     border-radius: 8px;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.image-card:hover .card-label{
+    opacity: 1;
 }
 .image-card:hover{
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(230, 200, 255, 0.6);
+}
+.professional-profile-container{
+    width: 90vw;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: #915699;
+    border-radius: 20px;
+}
+.professional-profile-heading{
+    font-size: 2rem; 
+    text-align: center;
+    margin: 1.5rem 0; 
+    font-family: 'Suse mono', monospace;
+    color: white;
+}
+.professional-profile-links{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+.profile-link{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(230, 200, 255, 0.4);
+    text-decoration: none;
+    text-align: center;
+}
+.profile-link img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(230, 200, 255, 0.4);
+    object-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-link:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(230, 200, 255, 0.6);
+}
+.profile-label{
+    position : absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Suse mono', monospace;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.profile-link:hover .profile-label{
+    opacity: 1;
+}
+.Contact-me-container{
+    width: 90vw;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 1rem;
+    background-color: #915699;
+    border-radius: 20px;
+
+}
+.Contact-me-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem; 
+    font-family: 'Suse mono', monospace;
+    color: white;
+}
+.Contact-me-content{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Suse mono', monospace;
+}
+.Contact-info, .Contact-me-form{
+    flex: 1 1 45%;
+    max-width: 45%; 
+    color: white;
+}
+.Contact-info{
+    flex: 1 1 30%;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; 
+}
+.Contact-info .app-link{
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #8A13EC;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    font-family: 'Suse mono', monospace;
+}
+.Contact-info .app-link img {
+  height: 1.5rem;
+  width: auto;
+}
+.Contact-info .app-link:hover {
+  background-color: #E4C4F2;
+  color: #0E0218;
+  transform: scale(1.05);
+}
+.Contact-detail {
+  margin: 0.5rem 0;
+}
+
+.Contact-me-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Contact-me-form label {
+  font-weight: bold;
+}
+
+.Contact-me-form input,
+.Contact-me-form select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Suse mono', monospace;
+}
+
+.Contact-me-form button {
+  background-color: #8A13EC;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.Contact-me-form button:hover {
+  background-color: #E4C4F2;
+  color: #0E0218;
+  transform: scale(1.05);
+}
+.Contact-me-form textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  resize: vertical;
+  font-family: 'Suse mono', monospace;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #0E0218;
+  box-shadow: 0 2px 6px rgba(230, 200, 255, 0.3);
 }
