@@ -1,6 +1,5 @@
 body{
     background-color: #E4C4F2;
-    
 }
 .header-container{
     display: flex;
@@ -155,6 +154,7 @@ body{
     margin: 1.5rem 0; 
     font-family: 'Suse mono', monospace;
     color: white;
+    border-bottom: 2px solid #E4C4F2;
 }
 .About-me-content{
     display: flex; 
@@ -253,6 +253,7 @@ body{
     margin: 1.5rem 0; 
     font-family: 'Suse mono', monospace;
     color: white;
+    border-bottom: 2px solid #E4C4F2;
 }
 .professional-profile-links{
     display: grid; 
@@ -321,6 +322,7 @@ body{
     margin-bottom: 2rem; 
     font-family: 'Suse mono', monospace;
     color: white;
+    border-bottom: 3px solid #441D4A;
 }
 .Contact-me-content{
     display: flex; 

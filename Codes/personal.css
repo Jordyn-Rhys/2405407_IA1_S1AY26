@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+}
+.hobbies-container{
+    width: 90vw; 
+    max-width: 1200px; 
+    margin: 3rem auto; 
+    padding: 1rem; 
+    background-color: #915699;
+    border-radius: 20px; 
+}
+.hobbies-block{
+    background-color: #0E0218;
+    padding: 2rem;
+    border-radius: 20px; 
+    box-shadow: 0 4px 12px rgba(230, 200, 255, 0.3);
+    font-family: 'Suse mono', monospace;
+    color: white; 
+    overflow: hidden;
+}
+.hobbies-header{
+    font-size: 2rem;
+    text-align: center; 
+    margin-bottom: 2rem;
+    border-bottom: 5px solid #E4C4F2;
+    padding-bottom: 0.5rem; 
+}
+.hobbies-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem; 
+    align-items: center; 
+}
+.hobbies-row.reverse{
+    flex-direction: row-reverse; 
+}
+.hobbies-image{
+    flex: 1 1 40%;
+    max-width: 40%;
+    border-radius: 20px; ;
+    box-shadow: 0 4px 12px rgba(230, 200, 255, 0.4);
+    object-fit: cover;
+}
+.hobbies-image img{
+    width: 100%;
+    height: auto; 
+    border-radius: 20px; 
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(230, 200, 255, 0.4);
+}
+.hobbies-info{
+    flex: 1 1 55%;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hobbies-info h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.hobbies-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.sports-container{
+    width: 90vw; 
+    max-width: 1200px; 
+    margin: 3rem auto;
+    padding: 1rem;
+    background-color: #915699;
+    border-radius: 20px; 
+}
+.sports-block{
+    background-color: #0E0218;
+    padding: 2rem; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 12px rgba(230, 200, 255, 0.3);
+    font-family: 'Suse mono', monospace;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.sports-header{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem; 
+    border-bottom: 2px solid #E4C4F2;
+}
+.sports-card{
+    flex: 1 1 40%;
+    background-color: #441d4a;
+    border-radius: 15px; 
+    box-shadow: 0 2px 8px rgba(230, 200, 255, 0.2); 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.sports-card:hover{
+    transform: scale(1.05);
+    z-index: 1;
+}
+.sports-image img {
+  width: 100%;
+  height: 500px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+.sports-info {
+  padding: 1rem;
+  text-align: center;
+}
+.sports-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.sports-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.inspiration-container {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: #915699;
+  border-radius: 20px;
+}
+.inspiration-block {
+  background-color: #0E0218;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(230, 200, 255, 0.3);
+  font-family: 'Suse mono', monospace;
+  color: white;
+}
+.inspiration-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #E4C4F2;
+}
+.inspiration-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+.image-block {
+  flex: 1 1 35%;
+}
+.image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(230, 200, 255, 0.4);
+}
+.inspiration-column {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.inspiration-row {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #441D4A;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(230, 200, 255, 0.2);
+  align-items: center;
+}
+.inspiration-info {
+  flex: 1;
+}
+
+.inspiration-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.inspiration-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.inspiration-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(230, 200, 255, 0.3);
+}
+.Innovation-container {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: #915699;
+  border-radius: 20px;
+}
+.innovation-block {
+  background-color: #0E0218;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(230, 200, 255, 0.3);
+  font-family: 'Suse mono', monospace;
+  color: white;
+  text-align: center;
+}
+.innovation-header {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #E4C4F2;
+  display: inline-block;
+}
+.innovation-info {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.innovation-button {
+  background-color: #8A13EC;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Suse mono', monospace;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+.innovation-button:hover {
+  background-color: #E4C4F2;
+  color: #0E0218;
+  transform: scale(1.05);
+}
+@media screen and (max-width: 600px) {
+  .hobbies-container,
+  .sports-container,
+  .inspiration-container,
+  .Innovation-container {
+    width: 95vw;
+    padding: 0.5rem;
+  }
+
+  .hobbies-row,
+  .hobbies-row.reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hobbies-image,
+  .hobbies-info {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hobbies-info h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .hobbies-info p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .sports-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sports-card {
+    flex: 0 1 100%;
+    width: 100%;
+  }
+
+  .sports-image img {
+    height: 250px;
+  }
+
+  .sports-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .sports-info p {
+    font-size: 1rem;
+  }
+
+  .inspiration-layout {
+    flex-direction: column;
+  }
+
+  .image-block img {
+    height: 250px;
+  }
+
+  .inspiration-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .inspiration-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .inspiration-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .inspiration-info p {
+    font-size: 1rem;
+  }
+
+  .innovation-header {
+    font-size: 1.8rem;
+  }
+
+  .innovation-info {
+    font-size: 1rem;
+  }
+
+  .innovation-button {
+    width: 100%;
+    text-align: center;
+  }
+}

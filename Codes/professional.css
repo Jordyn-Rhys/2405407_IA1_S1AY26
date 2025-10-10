@@ -247,7 +247,6 @@
   text-align: left;
 }
 @media screen and (max-width: 600px) {
-  /* General container adjustments */
   .Mission-statement-container,
   .CV-container,
   .Projects-container,
@@ -255,8 +254,6 @@
     width: 95vw;
     padding: 0.5rem;
   }
-
-  /* Mission & Vision section */
   .mission-statement-block {
     flex-direction: column;
     align-items: center;
@@ -280,7 +277,6 @@
     font-size: 1rem;
   }
 
-  /* CV section */
   .CV-block {
     padding: 1.5rem;
   }
@@ -307,7 +303,6 @@
     max-width: 100%;
   }
 
-  /* Projects section */
   .project-row,
   .project-row.reverse {
     flex-direction: column;
@@ -334,7 +329,6 @@
     align-self: center;
   }
 
-  /* Personal Development section */
   .Personal-dev-block {
     grid-template-columns: 1fr;
     padding: 1.5rem;
@@ -352,8 +346,3 @@
     font-size: 1rem;
   }
 }
-
-
-
-
-
