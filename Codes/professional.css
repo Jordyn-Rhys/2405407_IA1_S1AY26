@@ -246,6 +246,113 @@
   line-height: 1.6;
   text-align: left;
 }
+@media screen and (max-width: 600px) {
+  /* General container adjustments */
+  .Mission-statement-container,
+  .CV-container,
+  .Projects-container,
+  .Personal-dev-container {
+    width: 95vw;
+    padding: 0.5rem;
+  }
+
+  /* Mission & Vision section */
+  .mission-statement-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statement-column {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .mission-header {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .statement-heading {
+    font-size: 1.3rem;
+  }
+
+  .statement-column p {
+    font-size: 1rem;
+  }
+
+  /* CV section */
+  .CV-block {
+    padding: 1.5rem;
+  }
+
+  .CV-heading {
+    font-size: 1.8rem;
+  }
+
+  .cv-description {
+    font-size: 1rem;
+  }
+
+  .cv-download-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cv-download-block .app-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cv-preview img {
+    max-width: 100%;
+  }
+
+  /* Projects section */
+  .project-row,
+  .project-row.reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-image,
+  .project-info {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .project-info h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .project-info p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .rep-button {
+    align-self: center;
+  }
+
+  /* Personal Development section */
+  .Personal-dev-block {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .personal-dev-header {
+    font-size: 1.8rem;
+  }
+
+  .chapter-title {
+    font-size: 1.3rem;
+  }
+
+  .dev-info p {
+    font-size: 1rem;
+  }
+}
+
 
 
 
