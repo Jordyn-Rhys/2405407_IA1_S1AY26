@@ -427,6 +427,28 @@ body{
   color: #0E0218;
   box-shadow: 0 2px 6px rgba(230, 200, 255, 0.3);
 }
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #8A13EC;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    font-family: 'Suse mono', monospace;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(230, 200, 255, 0.3);
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+.back-to-top:hover {
+  background-color: #915699;
+  color: #0E0218;
+  transform: scale(1.05);
+}
+html{
+    scroll-behavior: smooth;
+}
 .footer-container{
     width: 100%;
     background-color: #441D4A;
@@ -441,3 +463,78 @@ body{
     color: white;
     margin: 0;
 }
+@media screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .header-logo-block {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .header-nav-block {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nav-buttons {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .intro-content,
+  .About-me-content,
+  .Contact-me-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-text,
+  .intro-image,
+  .About-me-text,
+  .About-me-image,
+  .Contact-info,
+  .Contact-me-form {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .image-card-links {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-link {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .profile-link img {
+    height: auto;
+  }
+
+  .Contact-card-left,
+  .Contact-card-right {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .back-to-top {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-container {
+    padding: 0.5rem;
+  }
+
+  .copyright-box p {
+    font-size: 0.8rem;
+  }
+}
+
